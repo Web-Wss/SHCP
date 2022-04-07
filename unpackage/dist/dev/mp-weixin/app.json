@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/home/home",
+    "pages/cate/cate",
+    "pages/publish/publish",
+    "pages/my/my"
   ],
   "subPackages": [],
   "window": {
@@ -8,6 +11,35 @@
     "navigationBarTitleText": "校园二手平台",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#C00000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/tab-icons/shouye_1.png",
+        "selectedIconPath": "static/tab-icons/shouye.png"
+      },
+      {
+        "pagePath": "pages/cate/cate",
+        "text": "分类",
+        "iconPath": "static/tab-icons/fenlei_1.png",
+        "selectedIconPath": "static/tab-icons/fenlei.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "static/tab-icons/icon_fabu.png",
+        "selectedIconPath": "static/tab-icons/fabu.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/tab-icons/wode_1.png",
+        "selectedIconPath": "static/tab-icons/wode.png"
+      }
+    ]
   },
   "usingComponents": {}
 }
