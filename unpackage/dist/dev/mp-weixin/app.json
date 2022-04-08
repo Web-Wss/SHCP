@@ -1,47 +1,48 @@
 {
-  "pages": [
-    "pages/home/home",
-    "pages/publish/publish",
-    "pages/my/my"
-  ],
-  "subPackages": [
-    {
-      "root": "subpkg",
-      "pages": [
-        "goods_detail/goods_detail",
-        "goods_cate/goods_cate",
-        "search/search"
-      ]
-    }
-  ],
-  "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "校园二手平台",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
-  },
-  "tabBar": {
-    "selectedColor": "#C00000",
-    "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "首页",
-        "iconPath": "static/tab-icons/shouye_1.png",
-        "selectedIconPath": "static/tab-icons/shouye.png"
-      },
-      {
-        "pagePath": "pages/publish/publish",
-        "text": "发布",
-        "iconPath": "static/tab-icons/icon_fabu.png",
-        "selectedIconPath": "static/tab-icons/fabu.png"
-      },
-      {
-        "pagePath": "pages/my/my",
-        "text": "我的",
-        "iconPath": "static/tab-icons/wode_1.png",
-        "selectedIconPath": "static/tab-icons/wode.png"
-      }
-    ]
-  },
-  "usingComponents": {}
+    "pages": [
+        "pages/home/home",
+        "pages/publish/publish",
+        "pages/my/my"
+    ],
+    "subPackages": [
+        {
+            "root": "subpkg",
+            "pages": [
+                "goods_detail/goods_detail",
+                "goods_cate/goods_cate",
+                "search/search"
+            ]
+        }
+    ],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "校园二手平台",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "selectedColor": "#C00000",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "static/tab-icons/shouye_1.png",
+                "selectedIconPath": "static/tab-icons/shouye.png"
+            },
+            {
+                "pagePath": "pages/publish/publish",
+                "text": "发布",
+                "iconPath": "static/tab-icons/icon_fabu.png",
+                "selectedIconPath": "static/tab-icons/fabu.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "static/tab-icons/wode_1.png",
+                "selectedIconPath": "static/tab-icons/wode.png"
+            }
+        ]
+    },
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
 }
