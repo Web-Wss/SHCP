@@ -6,28 +6,52 @@
       "enablePullDownRefresh": false
     }
 
-  }, {
-    "path": "pages/cate/cate",
-    "style": {
-      "navigationBarTitleText": "分类",
-      "enablePullDownRefresh": false
-    }
-
-  }, {
+  },  {
     "path": "pages/publish/publish",
     "style": {
       "navigationBarTitleText": "发布",
       "enablePullDownRefresh": false
     }
-
   }, {
     "path": "pages/my/my",
     "style": {
       "navigationBarTitleText": "我的",
       "enablePullDownRefresh": false
     }
-
   }],
+  "subPackages":[
+    {
+      "root":"subpkg",
+      "pages":[{
+                    "path" : "goods_detail/goods_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "goods_cate/goods_cate",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+    }
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "校园二手平台",
@@ -45,12 +69,6 @@
         "text":"首页",
         "iconPath":"static/tab-icons/shouye_1.png",
         "selectedIconPath":"static/tab-icons/shouye.png"
-      },
-      {
-        "pagePath":"pages/cate/cate",
-        "text":"分类",
-        "iconPath":"static/tab-icons/fenlei_1.png",
-        "selectedIconPath":"static/tab-icons/fenlei.png"
       },
       {
         "pagePath":"pages/publish/publish",

@@ -1,11 +1,19 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/cate/cate",
     "pages/publish/publish",
     "pages/my/my"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "goods_detail/goods_detail",
+        "goods_cate/goods_cate",
+        "search/search"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "校园二手平台",
@@ -20,12 +28,6 @@
         "text": "首页",
         "iconPath": "static/tab-icons/shouye_1.png",
         "selectedIconPath": "static/tab-icons/shouye.png"
-      },
-      {
-        "pagePath": "pages/cate/cate",
-        "text": "分类",
-        "iconPath": "static/tab-icons/fenlei_1.png",
-        "selectedIconPath": "static/tab-icons/fenlei.png"
       },
       {
         "pagePath": "pages/publish/publish",
