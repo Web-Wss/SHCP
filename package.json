@@ -1,5 +1,14 @@
 {
-  "dependencies": {
-    "@escook/request-miniprogram": "^0.2.1"
-  }
+    "id": "top-tabbar",
+    "name": "顶部导航栏（横向）",
+    "version": "1.0.1",
+    "description": "自定义顶部导航栏",
+    "keywords": [
+        "顶部导航栏",
+        "自定义导航栏",
+        "横向导航栏"
+    ],
+    "dependencies": {
+        "async-validator": "^1.11.5"
+    }
 }

@@ -4,7 +4,7 @@
     <!-- 轮播图区域 -->
     <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true">
       <swiper-item v-for="(item,i) in swiperList" :key="i">
-        <navigator class="swiper-item" :url="'/subpkg/goods_detail/goods_detail?goods_id=' + item.goods_id">
+        <navigator class="swiper-item" >
           <image :src="item.imageUrl"></image>
         </navigator>
       </swiper-item>
@@ -12,7 +12,7 @@
 
     <!-- 通知区域 -->
 
-    <uni-notice-bar show-icon scrollable text="uni-app 版正式发布，开发一次，同时发布iOS、Android、H5、微信小程序、支付宝小程序、百度小程序、头条小程序等7大平台。" />
+    <uni-notice-bar show-icon scrollable text="马师专二手平台目前仅支持发布单张图片商品,如需发布多张,请登录www.massz.shop,给您带来不便,敬请谅解" />
 
     <!-- 分类 -->
     <view class="cate-box">
@@ -32,13 +32,13 @@
       - - - - - 好物抢先购 - - - - -
     </view>
     <view class="goodGoods">
-      <navigator class="goods-item" v-for="(item,i) in goodGoodsList" :key="i" :url="'/subpkg/goods_detail/goods_detail?goods_id=' + item.id">
-        <image :src="item.imgUrl"></image>
+      <navigator class="goods-item" v-for="(item,i) in goodGoodsList" :key="i" :url="'/subpkg/goods_detail/goods_detail?goods_id=' + item.goods_id">
+        <image :src="item.goods_img"></image>
         <view class="goods-title">
-          <text>{{item.title}} </text>
+          <text>{{item.goods_name}} </text>
         </view>
         <view class="goods-price">
-          <text>${{item.price}}</text>
+          <text>￥{{item.goods_price}}</text>
         </view>
       </navigator>
     </view>
@@ -76,13 +76,13 @@
         // 分类数据
         cateList: [{
             id: 1,
-            imgUrl: '/static/cate-img/yifu.png',
-            title: '男生服装',
+            imgUrl: '/static/cate-img/yifu_1.png',
+            title: '女士服装',
           },
           {
             id: 2,
-            imgUrl: '/static/cate-img/yifu_1.png',
-            title: '女生服装',
+            imgUrl: '/static/cate-img/yifu.png',
+            title: '男士服装',
           },
           {
             id: 3,
@@ -116,74 +116,19 @@
           },
         ],
         goodGoodsList:[
-          {
-            id:1,
-            imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/39bb34167f6c178d6bb768d8872c97f8.jpg?w=2452&h=920',
-            title:'拯救者Y9000P 3060',
-            price:10399
-          },
-          {
-            id:2,
-            imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/222d6c61df75f30e6782ec476d5c8273.jpg?thumb=1&w=1226&h=460&f=webp&q=90',
-            title:'拯救者Y9000P 3060',
-            price:10399
-          },
-          {
-            id:3,
-            imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dd741adcce9417d72ea4c1a6dfcc96e2.jpg?thumb=1&w=1226&h=460&f=webp&q=90',
-            price:10399
-          },
-          {
-            id:4,
-            imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dd741adcce9417d72ea4c1a6dfcc96e2.jpg?thumb=1&w=1226&h=460&f=webp&q=90',
-            title:'拯救者Y9000P 3060',
-            price:10399
-          },
-          {
-            id:5,
-            imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/39bb34167f6c178d6bb768d8872c97f8.jpg?w=2452&h=920',
-            title:'拯救者Y9000P 3060',
-            price:10399
-          },
-          {
-            id:6,
-            imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/222d6c61df75f30e6782ec476d5c8273.jpg?thumb=1&w=1226&h=460&f=webp&q=90',
-            title:'拯救者Y9000P 3060',
-            price:10399
-          },
-          {
-            id:7,
-            imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dd741adcce9417d72ea4c1a6dfcc96e2.jpg?thumb=1&w=1226&h=460&f=webp&q=90',
-            price:10399
-          },
-          {
-            id:8,
-            imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dd741adcce9417d72ea4c1a6dfcc96e2.jpg?thumb=1&w=1226&h=460&f=webp&q=90',
-            title:'拯救者Y9000P 3060',
-            price:10399
-          },
-          {
-            id:9,
-            imgUrl:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dd741adcce9417d72ea4c1a6dfcc96e2.jpg?thumb=1&w=1226&h=460&f=webp&q=90',
-            title:'拯救者Y9000P 3060',
-            price:10399
-          },
-        
         ]
         
       };
     },
     onLoad() {
-      // 获取轮播图数据的方法
-      this.getSwiperList()
+      // 获取好物数据的方法
+      this.getgoodGoodsList()
     },
     methods: {
-      async getSwiperList() {
-        // const {data:res} = await uni.$http.get('')
-        // 请求失败
-        // if(res.data.status !== 200) return uni.$showMsg()
-        // 请求成功
-        // this.swiperList = res.message
+      async getgoodGoodsList() {
+        const {data:res} = await uni.$http.get('/GoodsGoodsServlet')
+        console.log(res)
+        this.goodGoodsList = res
       }
     }
   }

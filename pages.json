@@ -26,7 +26,7 @@
                     "path" : "goods_detail/goods_detail",
                     "style" :                                                                                    
                 {
-                    "navigationBarTitleText": "",
+                    "navigationBarTitleText": "商品详情页",
                     "enablePullDownRefresh": false
                 }
                 
@@ -35,7 +35,7 @@
                     "path" : "goods_cate/goods_cate",
                     "style" :                                                                                    
                 {
-                    "navigationBarTitleText": "",
+                    "navigationBarTitleText": "分类",
                     "enablePullDownRefresh": false
                 }
                 
@@ -44,7 +44,43 @@
                     "path" : "search/search",
                     "style" :                                                                                    
                 {
-                    "navigationBarTitleText": "",
+                    "navigationBarTitleText": "搜索",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "user_goods/user_goods",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "Ta的发布",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "my_love_goods/my_love_goods",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "我的收藏",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "login/login",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "登录",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "my_publish/my_publish",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "我的发布",
                     "enablePullDownRefresh": false
                 }
                 

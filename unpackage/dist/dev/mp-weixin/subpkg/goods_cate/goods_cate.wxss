@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.scroll-view_H.data-v-3b54d0ba {
+  display: flex;
+  flex: 1;
+  white-space: nowrap;
+  border-bottom: 1px solid #aaaaaa;
+}
+.scroll-view_H .scroll-view-item_H.data-v-3b54d0ba {
+  margin: 5px;
+  width: 160rpx;
+  height: 50rpx;
+  display: inline-block;
+}
+.scroll-view_H .active.data-v-3b54d0ba {
+  color: red;
+}
+.goods-items.data-v-3b54d0ba {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.goods-items .goods-item.data-v-3b54d0ba {
+  border-radius: 25px;
+  margin: 8rpx;
+  background-color: #fff;
+  width: 31%;
+  height: 320rpx;
+}
+.goods-items .goods-item image.data-v-3b54d0ba {
+  border-radius: 25px;
+  width: 100%;
+  height: 200rpx;
+}
+.goods-items .goods-item .goods-title.data-v-3b54d0ba {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  font-size: 22rpx;
+  height: 60rpx;
+}
+.goods-items .goods-item .goods-price.data-v-3b54d0ba {
+  text-align: center;
+  font-size: 30rpx;
+  color: red;
+}
+page.data-v-3b54d0ba {
+  background-color: #fafafa;
+}
+/* 滑动菜单栏的总内容区域 */
+.uni-slidingMenu.data-v-3b54d0ba {
+  width: 100%;
+  white-space: nowrap;
+  height: 80rpx;
+  background-color: #FFFFFF;
+}
+/* 循环显示的菜单栏 */
+.slidingMenuList.data-v-3b54d0ba {
+  height: 80rpx;
+  line-height: 80rpx;
+  display: inline-block;
+  font-size: 24rpx;
+  margin-left: 60rpx;
+}
+.slidingMenuList.data-v-3b54d0ba:last-child {
+  margin-right: 60rpx;
+}
+/* 点击选中菜单栏时的样式 */
+.active.data-v-3b54d0ba {
+  color: pink;
+  font-size: 28rpx;
+  margin-left: 80rpx;
+  border-bottom: 2rpx solid pink;
+  box-sizing: border-box;
+}
+

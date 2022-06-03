@@ -31,7 +31,11 @@
     },
     methods: {
       searchBoxHandler() {
-        this.$emit('click')
+        // console.log('触发')
+        uni.navigateTo({
+          url:'../../subpkg/search/search'
+        })
+        // this.$emit('click')
       }
     }
   }

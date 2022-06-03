@@ -23,6 +23,48 @@
                     "pathName": "pages/my/my",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "subpkg/goods_cate/goods_cate",
+                    "pathName": "subpkg/goods_cate/goods_cate",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/home/home",
+                    "pathName": "pages/home/home",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "subpkg/goods_detail/goods_detail",
+                    "pathName": "subpkg/goods_detail/goods_detail",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "subpkg/login/login",
+                    "pathName": "subpkg/login/login",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "subpkg/search/search",
+                    "pathName": "subpkg/search/search",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "subpkg/user_goods/user_goods",
+                    "pathName": "subpkg/user_goods/user_goods",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "subpkg/my_love_goods/my_love_goods",
+                    "pathName": "subpkg/my_love_goods/my_love_goods",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }

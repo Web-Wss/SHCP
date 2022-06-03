@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/publish/publish"],{
 
 /***/ 24:
-/*!************************************************************************************************************!*\
-  !*** C:/Users/admin/Desktop/Second hand campus platform/SHCP/main.js?{"page":"pages%2Fpublish%2Fpublish"} ***!
-  \************************************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** C:/Users/admin/Desktop/微信小程序1.0.0/SHCP/main.js?{"page":"pages%2Fpublish%2Fpublish"} ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17,9 +17,9 @@ createPage(_publish.default);
 /***/ }),
 
 /***/ 25:
-/*!*****************************************************************************************!*\
-  !*** C:/Users/admin/Desktop/Second hand campus platform/SHCP/pages/publish/publish.vue ***!
-  \*****************************************************************************************/
+/*!************************************************************************!*\
+  !*** C:/Users/admin/Desktop/微信小程序1.0.0/SHCP/pages/publish/publish.vue ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -56,9 +56,9 @@ component.options.__file = "pages/publish/publish.vue"
 /***/ }),
 
 /***/ 26:
-/*!************************************************************************************************************************!*\
-  !*** C:/Users/admin/Desktop/Second hand campus platform/SHCP/pages/publish/publish.vue?vue&type=template&id=177a8126& ***!
-  \************************************************************************************************************************/
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/admin/Desktop/微信小程序1.0.0/SHCP/pages/publish/publish.vue?vue&type=template&id=177a8126& ***!
+  \*******************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -78,9 +78,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 27:
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/admin/Desktop/Second hand campus platform/SHCP/pages/publish/publish.vue?vue&type=template&id=177a8126& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/admin/Desktop/微信小程序1.0.0/SHCP/pages/publish/publish.vue?vue&type=template&id=177a8126& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -94,19 +94,19 @@ var components
 try {
   components = {
     uniSection: function() {
-      return __webpack_require__.e(/*! import() | components/uni-section/uni-section */ "components/uni-section/uni-section").then(__webpack_require__.bind(null, /*! @/components/uni-section/uni-section.vue */ 68))
+      return __webpack_require__.e(/*! import() | components/uni-section/uni-section */ "components/uni-section/uni-section").then(__webpack_require__.bind(null, /*! @/components/uni-section/uni-section.vue */ 102))
     },
     uniForms: function() {
-      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms/uni-forms */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms/uni-forms")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms/uni-forms.vue */ 75))
+      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms/uni-forms */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms/uni-forms")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms/uni-forms.vue */ 109))
     },
     uniFormsItem: function() {
-      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms-item/uni-forms-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms-item/uni-forms-item")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue */ 83))
+      return Promise.all(/*! import() | uni_modules/uni-forms/components/uni-forms-item/uni-forms-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-forms/components/uni-forms-item/uni-forms-item")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue */ 117))
     },
     uniEasyinput: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput */ "uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue */ 90))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput */ "uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue */ 124))
     },
-    uniFilePicker: function() {
-      return Promise.all(/*! import() | uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker.vue */ 97))
+    uniCombox: function() {
+      return __webpack_require__.e(/*! import() | uni_modules/uni-combox/components/uni-combox/uni-combox */ "uni_modules/uni-combox/components/uni-combox/uni-combox").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-combox/components/uni-combox/uni-combox.vue */ 131))
     }
   }
 } catch (e) {
@@ -140,9 +140,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 28:
-/*!******************************************************************************************************************!*\
-  !*** C:/Users/admin/Desktop/Second hand campus platform/SHCP/pages/publish/publish.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** C:/Users/admin/Desktop/微信小程序1.0.0/SHCP/pages/publish/publish.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -156,14 +156,23 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 29:
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/admin/Desktop/Second hand campus platform/SHCP/pages/publish/publish.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/admin/Desktop/微信小程序1.0.0/SHCP/pages/publish/publish.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -192,14 +201,87 @@ var _default =
 {
   data: function data() {
     return {
+      imgSrc: 'https://s1.ax1x.com/2022/03/16/qpRzGT.jpg', //图片地址
+      // 用户id
+      user_id: '',
       // 基础表单数据
+      imageValue: [],
       baseFormData: {
-        name: '',
-        price: '',
-        introduction: '' } };
+        name: '', //名称
+        price: '', //价格
+        candidates: ['女生服饰', '男生服饰', '美妆护肤', '手机数码', '食品饮料', '珠宝饰品', '图书文具', '体育用具'],
+        // ['女生服饰', '男生服饰', '美妆护肤', '手机数码', '食品饮料', '珠宝饰品','图书文具', '体育用具'],
+        city: '', //分类
+        introduction: '' //描述
+      } };
 
+  },
+  onLoad: function onLoad() {
+    // 判断用户是否登录
+    var token = uni.getStorageSync('token');
+    if (token.length == 0) {
+      uni.redirectTo({
+        url: '../../subpkg/login/login' });
 
-  } };exports.default = _default;
+    }
+    // 将username赋值username
+    this.user_id = uni.getStorageSync('user_id');
+  },
+  methods: {
+    submit: function submit() {var _this = this;
+      if (this.baseFormData.city == '女生服饰') {
+        this.baseFormData.city = 1;
+      } else if (this.baseFormData.city == '男生服饰') {
+        this.baseFormData.city = 2;
+      } else if (this.baseFormData.city == '美妆护肤') {
+        this.baseFormData.city = 3;
+      } else if (this.baseFormData.city == '手机数码') {
+        this.baseFormData.city = 4;
+      } else if (this.baseFormData.city == '食品饮料') {
+        this.baseFormData.city = 5;
+      } else if (this.baseFormData.city == '珠宝饰品') {
+        this.baseFormData.city = 6;
+      } else if (this.baseFormData.city == '图书文具') {
+        this.baseFormData.city = 7;
+      } else if (this.baseFormData.city == '体育用具') {
+        this.baseFormData.city = 8;
+      } else {
+        this.baseFormData.city = '';
+      }
+      if (this.user_id == '' || this.baseFormData.city == '' || this.baseFormData.name == '' || this.baseFormData.price == '' || this.baseFormData.introduction == '') {
+        uni.showToast({
+          title: '请将表单信息填写完整',
+          duration: 2000 });
+
+      } else {
+        uni.chooseImage({
+          success: function success(res) {
+            var tempFilePaths = res.tempFilePaths;
+            tempFilePaths.forEach(function (item) {
+              uni.uploadFile({
+                url: "http://massz.shop/Interfaces_web-1.0-SNAPSHOT/UploadImgServlet?user_id=".concat(_this.user_id, "&value=").concat(_this.baseFormData.city, "&goods_name=").concat(_this.baseFormData.name, "&goods_price=").concat(_this.baseFormData.price, "&goods_describe=").concat(_this.baseFormData.introduction), //服务器地址
+                fileType: "image", //ZFB必填,不然报错
+                filePath: item, //这个就是咱们下面拍照返回或者先中照片返回的数组
+                name: 'file',
+                success: function success(uploadFileRes) {
+                  uni.showToast({
+                    title: '发布成功!',
+                    duration: 2000 });
+
+                  _this.baseFormData.name = '',
+                  _this.baseFormData.price = '',
+                  _this.baseFormData.introduction = '',
+                  _this.baseFormData.city = '';
+
+                } });
+
+            });
+          } });
+
+      }
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 

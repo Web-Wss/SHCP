@@ -5,11 +5,18 @@ import App from './App'
 // 导入escook/request-miniprogram
 import { $http } from '@escook/request-miniprogram'
 
+
+
 uni.$http = $http
 // 配置请求根路径
-$http.baseUrl = ''
+// $http.baseUrl = 'http://localhost:8080/Interfaces'
+$http.baseUrl = 'http://www.massz.shop/Interfaces_web-1.0-SNAPSHOT'
 // 请求拦截器
 $http.beforeRequest = function(options) {
+  // 请求头
+  options.header = {
+    "token" :uni.getStorageSync('token')
+  },
   uni.showLoading({
     title:"数据加载中..."
   })
@@ -26,6 +33,7 @@ uni.$showMsg = function(title='数据请求失败',duration = 1500) {
     icon:'none'
   })
 }
+
 
 Vue.config.productionTip = false
 

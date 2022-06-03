@@ -3,16 +3,16 @@
     <!-- logo+name -->
     <view class="image-name">
       <view class="image">
-        <image src="https://img2.baidu.com/it/u=1489746086,405631587&fm=253&fmt=auto&app=138&f=JPEG?w=360&h=360"></image>
+        <image :src="user_img"></image>
       </view>
       <view class="name">
-        <text>前端菜鸟</text>
+        <text>{{user_nickname}}</text>
       </view>
     </view>
     
     <!-- 我的发布--我的收藏 -->
     <view class="publish-collection">
-      <view class="two">
+      <view class="two" @click="publish()">
         <view class="image-icon">
           <uni-icons type="list" size="35" color="green"></uni-icons>
         </view>
@@ -20,7 +20,7 @@
           我的发布
         </view>
       </view>
-      <view class="two">
+      <view class="two" @click="love()">
         <view class="image-icon">
           <uni-icons type="heart" size="35" color="green"></uni-icons>
         </view>
@@ -49,7 +49,7 @@
               <uni-list-item title="设置"  showArrow
               	thumb="/static/my-icons/shezhi.png"
               	thumb-size="sm" />
-              <uni-list-item title="退出登录"  showArrow
+              <uni-list-item clickable  @click="logout()" title="退出登录"  showArrow
               	thumb="/static/my-icons/tuichu.png"
               	thumb-size="sm" />
                 
@@ -66,8 +66,40 @@
   export default {
     data() {
       return {
-        
+        user_nickname:'',
+        user_img:'',
       };
+    },
+    onLoad() {
+      let token = uni.getStorageSync('token');
+      if(token.length == 0) {
+        uni.redirectTo({
+          url:'../../subpkg/login/login'
+        })
+      }
+      this.user_nickname = uni.getStorageSync('user_nickname')
+      this.user_img = uni.getStorageSync('user_img')
+    },
+    methods:{
+      // 我的发布
+      publish() {
+        uni.navigateTo({
+          url:'../../subpkg/my_publish/my_publish'
+        })
+      },
+      // 跳转我的收藏
+      love() {
+        uni.navigateTo({
+          url:'../../subpkg/my_love_goods/my_love_goods?user_id=' + uni.getStorageSync('user_id')
+        })
+      },
+      // 退出登录
+      logout() {
+        uni.clearStorageSync()
+        uni.reLaunch({
+          url:'../../subpkg/login/login'
+        })
+      }
     }
   }
 </script>

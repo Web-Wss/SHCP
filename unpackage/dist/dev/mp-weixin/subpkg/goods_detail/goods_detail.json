@@ -1,5 +1,9 @@
 {
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "商品详情页",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-section": "/components/uni-section/uni-section",
+    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
+    "uni-goods-nav": "/uni_modules/uni-goods-nav/components/uni-goods-nav/uni-goods-nav"
+  }
 }

@@ -3,6 +3,29 @@
 		onLaunch: function() {
 			console.warn('当前组件仅支持 uni_modules 目录结构 ，请升级 HBuilderX 到 3.1.0 版本以上！')
 			console.log('App Launch')
+      
+      // 判断用户是否登录
+      // token
+      let token = uni.getStorageSync('token')
+      console.log("token===",token)
+      if(token) {
+        // 存在，关闭启动页
+        // plus.navigator.closeSplashscreen();
+        uni.redirectTo({
+          url:'/./pages/home/home'
+        })
+      }else{
+        // 不存在，跳转登录页面
+        uni.reLaunch({
+          url:'./subpkg/login/login',
+          // success: () => {
+          //   plus.navigator.closeSplashscreen()
+          // }
+        })
+      }
+     
+
+      
 		},
 		onShow: function() {
 			console.log('App Show')
